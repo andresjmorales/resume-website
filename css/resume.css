@@ -1,0 +1,332 @@
+/*!
+ * Start Bootstrap - Resume v5.0.5 (https://startbootstrap.com/template-overviews/resume)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
+ */
+
+/*
+ * Roboto, 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+ */
+
+
+
+:root {
+  --navbar_len: 14%; /* these two must add up to 100% */
+  --width:      86%; 
+  
+  /* other globals */
+  --prof: 10rem;
+}
+
+body {
+  font-family: Roboto, 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  padding-top: 54px; 
+  color: black;
+  background-color: silver;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 0;
+    padding-left: var(--navbar_len);
+  }
+}
+
+/*
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: $background
+}
+*/
+
+
+canvas{
+  display:block;
+  vertical-align:bottom;
+}
+
+
+#links {
+  z-index: 1;
+}
+
+
+.subheading#email {
+  z-index: 2;
+}
+
+
+
+/* ---- stats.js ---- */
+
+.count-particles{
+  background: silver;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13E8E9;
+  font-size: .8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 0px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+ /*  z-index: -1; */
+}
+
+.js-count-particles{
+  font-size: 1.1em;
+}
+
+#stats,
+.count-particles{
+  -webkit-user-select: none;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+#stats{
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+
+.count-particles{
+  border-radius: 0 0 3px 3px;
+}
+
+
+/* ---- particles.js container ---- */
+
+#particles-js{
+  position: absolute;
+/*  background: $background; */
+  width: var(--width);
+  height: 100%;
+  /*background-color: silver;*/
+  /*background-image: url('');8/
+ /* background-size: cover; */
+/*   background-position: 50% 50%; */
+ /* background-repeat: no-repeat; */
+  z-index: -1;
+}
+
+
+/*
+#home {
+  background-color: silver;
+}
+*/
+
+#profile {
+  width:  var(--prof);
+  height: var(--prof);
+}
+
+.title {
+  font-weight: 600;
+}
+
+
+h1 {
+  font-size: 6rem;
+  line-height: 5.5rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+  color: navy;
+}
+
+h4 {
+  font-family: 
+  padding-top: 54px;
+  color: black;
+}
+
+h6 {
+/*  font-family: Roboto, 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; */
+  font-weight: 700;
+  text-transform: uppercase;
+  color: blue;
+}
+
+p.lead {
+  color: black;
+  font-size: 1.15rem;
+  font-weight: 400;
+}
+
+#name {
+  font-family: Inconsolata;
+  color: navy !important;
+}
+
+.bulleted {
+  text-transform: none;
+  color: black;
+  font-weight: 500;
+/*  font-family: Roboto, -apple-system, Arial, sans-serif; */
+  font-size: 1.2rem;
+}
+
+.subheading {
+  text-transform: none;
+  color: black;
+
+  font-weight: 500;
+/*  font-family: Roboto, -apple-system, Arial, sans-serif; */
+  font-size: 1.5rem;
+}
+
+.social-icons a {
+  display: inline-block;
+  height: 3.5rem;
+  width: 3.5rem;
+  background-color: gray;
+  color: #fff !important;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 3.5rem;
+  margin-right: 1rem;
+}
+
+.social-icons a:last-child {
+  margin-right: 0;
+}
+
+.social-icons a:hover {
+  background-color: blue;
+}
+
+.dev-icons {
+  font-size: 3rem;
+}
+
+.dev-icons .list-inline-item i:hover {
+  color: #BD5D38;
+}
+
+#sideNav .navbar-nav .nav-item .nav-link {
+  font-weight: 800;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+}
+
+#sideNav .navbar-toggler:focus {
+  outline-color: #d48a6e;
+}
+
+@media (min-width: 992px) {
+  #sideNav {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: /*17rem;*/ var(--navbar_len);
+    height: 100vh;
+  }
+  #sideNav .navbar-brand {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto auto 0;
+    padding: 0.5rem;
+  }
+  #sideNav .navbar-brand .img-profile {
+    max-width: 10rem;
+    max-height: 10rem;
+    border: 0.5rem solid rgba(255, 255, 255, 0.2);
+  }
+  #sideNav .navbar-collapse {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-flex: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    width: 100%;
+    margin-bottom: auto;
+  }
+  #sideNav .navbar-collapse .navbar-nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+  }
+  #sideNav .navbar-collapse .navbar-nav .nav-item {
+    display: block;
+  }
+  #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
+    display: block;
+  }
+}
+
+section.resume-section {
+ /* padding-top: 5rem !important;
+  padding-bottom: 5rem !important;
+/*  max-width: 75rem; */
+}
+
+section.resume-section .resume-item .resume-date {
+  min-width: none;
+  margin-right: 7%;
+}
+
+@media (min-width: 768px) {
+  section.resume-section {
+    min-height: 100vh;
+  }
+  section.resume-section .resume-item .resume-date {
+    min-width: 18rem;
+  }
+}
+
+@media (min-width: 992px) {
+  section.resume-section {
+ /*   padding-top: 3rem !important; */
+    /* padding-bottom: 3rem !important; */
+  }
+}
+
+.bg-primary {
+  background-color: navy !important;
+}
+
+.text-primary {
+  font: Roboto;
+  color: black !important;
+}
+
+#link {
+  z-index: -5;
+}
+
+a {
+  color: blue;
+  /* z-index: 5; */
+}
+
+a:hover, a:focus, a:active {
+  color: navy;
+  /*  z-index: 5; */
+}
